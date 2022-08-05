@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#start {
+    background: url(cover_photo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 735px;
+}
+
+.start__box{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+.nav_bar {
+    padding: 24px;
+    max-width: 1200px;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0px;
+    border-bottom: 1px solid white;
+}
+
+.nav_bar__left a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav_bar__midle input{
+    border: 1.5px solid white;
+    height: 41px;
+    width: 288px;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.nav_bar__midle ::placeholder{
+    color: #FFFFFF;
+    opacity: 1;
+    padding-left: 20px;
+}
+.nav_bar__right a {
+    text-decoration: none;
+    padding-left: 32px;
+    width: 72px;
+    height: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.hamburger{
+    align-items: center;
+    display: none;
+}
+
+.hamburger a{
+    padding: 16px;
+
+}
+
+.start__text_box {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.start__text_box h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    color: #FFFFFF;
+}
+
+.start__text_box h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.start__text_box a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 800px) {
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav_bar__midle {
+        display: none;
+    }
+
+    .nav_bar__right {
+        display: none;
+    }
+
+    .start__text_box {
+        align-items: center;
+        & h1{
+            text-align: center;
+        }
+    }
+}
