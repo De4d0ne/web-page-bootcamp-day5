@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#start {
+    background-color: rgb(126, 125, 125);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 735px;
+}
+
+.nav_bar {
+    padding: 24px;
+    width: 1200px;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0px;
+    border-bottom: 1px solid white;
+}
+
+.nav_bar__left a{
+    width: 198px;
+    height: 44px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav_bar__midle input{
+    border: 1.5px solid white;
+    height: 41px;
+    width: 288px;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.nav_bar__midle ::placeholder{
+    color: #FFFFFF;
+    opacity: 1;
+    padding-left: 20px;
+}
+.nav_bar__right a {
+    text-decoration: none;
+    padding-left: 32px;
+    width: 72px;
+    height: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.hamburger{
+    display: none;
+}
+
+.hamburger a{
+    padding: 16px;
+
+}
+
+.start__text_box {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.start__text_box h1{
+    width: 792px;
+    height: 140px;
+    left: 117px;
+    top: 140px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    color: #FFFFFF;
+}
+
+.start__text_box h2 {
+    width: 792px;
+    height: 32px;
+    left: 117px;
+    top: 296px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.start__text_box a{
+    width: 155px;
+    height: 24px;
+    left: 120px;
+    top: 344px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+@media  screen and (max-width: 800) {
+    .hamburger{
+        display: flex;
+    }
+    
+    .nav_bar__midle  .nav_bar__right{
+        display: none;
+    }
+}
